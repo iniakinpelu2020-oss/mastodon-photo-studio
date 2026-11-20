@@ -1,1 +1,204 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Mastodon Photo Studio — Editorial Portraits & Iconic Studio Shoots in Lekki</title>
+<meta name="description" content="5.0★ rated photography & creative studio in Lekki Ikate, Lagos Island. Transparent Naira packages, outfit-change steppers, direct WhatsApp slot reservation." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div id="splash" class="splash" aria-hidden="true">
+  <div class="splash-emblem">
+    <svg viewBox="0 0 120 120" width="96" height="96" aria-hidden="true">
+      <circle cx="60" cy="60" r="56" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+      <circle cx="60" cy="60" r="22" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+      <g stroke="#FFFFFF" stroke-width="2.5" fill="none">
+        <line x1="60" y1="4" x2="60" y2="28" />
+        <line x1="60" y1="92" x2="60" y2="116" />
+        <line x1="4" y1="60" x2="28" y2="60" />
+        <line x1="92" y1="60" x2="116" y2="60" />
+        <line x1="19" y1="19" x2="36" y2="36" />
+        <line x1="84" y1="84" x2="101" y2="101" />
+        <line x1="19" y1="101" x2="36" y2="84" />
+        <line x1="84" y1="36" x2="101" y2="19" />
+      </g>
+      <text x="60" y="66" text-anchor="middle" font-family="Poppins,sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" letter-spacing="1.5">M</text>
+    </svg>
+    <span class="splash-word">MASTODON</span>
+  </div>
+</div>
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-badge">MP</span>
+      <span class="brand-name">Mastodon Photo Studio</span>
+    </div>
+    <div class="header-actions">
+      <span class="trust-pill">5.0★ (45 Google Reviews)</span>
+      <a class="wa-pill" href="https://wa.me/2348137277619" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero-stage" id="heroStage">
+    <div class="stage-backdrop" aria-hidden="true"></div>
+    <div class="stage-watermark" aria-hidden="true">MASTODON</div>
+    <div class="stage-canvas-wrap" id="stageCanvasWrap">
+      <canvas id="stageCanvas" width="800" height="600" aria-label="Interactive 3D studio lens stage"></canvas>
+    </div>
+    <div class="stage-telemetry" aria-hidden="true">
+      <span class="tel-pill">50MM F/1.2 PRIME · LEKKI IKATE</span>
+      <span class="tel-pill">45 FIVE-STAR SHOOTS</span>
+      <span class="tel-pill">5.0★ RATED</span>
+    </div>
+    <div class="stage-content">
+      <h1 class="stage-headline">Editorial Portraits &amp; Iconic Studio Shoots in Lekki.</h1>
+      <div class="stage-ctas">
+        <button class="cta-gold" id="bookShootBtn">Book a Shoot</button>
+        <a class="cta-glass" href="https://wa.me/2348137277619" target="_blank" rel="noopener">WhatsApp +234 813 727 7619</a>
+      </div>
+    </div>
+    <div class="stage-hint" aria-hidden="true">Drag to rotate the lens</div>
+  </section>
+  <section class="spatial" id="packages">
+    <div class="spatial-head">
+      <span class="micro-tag">SPATIAL PACKAGES</span>
+      <h2>Choose your shoot</h2>
+      <p>Swipe or tap a category to bring it center stage.</p>
+    </div>
+    <div class="spatial-cats" id="spatialCats">
+      <button class="spatial-cat active" data-idx="0">Portraits</button>
+      <button class="spatial-cat" data-idx="1">Birthday Glam</button>
+      <button class="spatial-cat" data-idx="2">Corporate</button>
+      <button class="spatial-cat" data-idx="3">Maternity</button>
+      <button class="spatial-cat" data-idx="4">Brand Lookbook</button>
+    </div>
+    <div class="spatial-stage" id="spatialStage">
+      <button class="spatial-nav spatial-prev" id="spatialPrev" aria-label="Previous package">‹</button>
+      <div class="spatial-card" id="spatialCard">
+        <div class="spatial-img-wrap">
+          <img id="spatialImg" src="" alt="" width="1200" height="900" />
+          <div class="spatial-img-veil" aria-hidden="true"></div>
+        </div>
+        <div class="spatial-info">
+          <div class="spatial-catlabel" id="spatialCatLabel"></div>
+          <h3 class="spatial-name" id="spatialName"></h3>
+          <div class="spatial-price" id="spatialPrice"></div>
+          <div class="spatial-desc" id="spatialDesc"></div>
+          <div class="stepper-row">
+            <span class="label">Outfit Changes (1–4)</span>
+            <div class="stepper">
+              <button class="step-btn" id="outfitMinus" aria-label="Decrease outfits">−</button>
+              <span class="step-val" id="outfitVal">1</span>
+              <button class="step-btn" id="outfitPlus" aria-label="Increase outfits">+</button>
+            </div>
+          </div>
+          <div class="extra-row">
+            <span class="extra-label">Extra Retouched Edits</span>
+            <div class="extra-opts" id="extraOpts">
+              <button class="extra-opt active" data-extra="0">Base</button>
+              <button class="extra-opt" data-extra="5">+5</button>
+              <button class="extra-opt" data-extra="10">+10</button>
+              <button class="extra-opt" data-extra="20">+20</button>
+            </div>
+          </div>
+          <div class="spatial-total">
+            <span class="total-label">Total</span>
+            <span class="total-val" id="spatialTotal">₦0</span>
+          </div>
+          <button class="select-btn" id="selectBtn">Select Package</button>
+        </div>
+      </div>
+      <button class="spatial-nav spatial-next" id="spatialNext" aria-label="Next package">›</button>
+    </div>
+    <div class="spatial-dots" id="spatialDots"></div>
+  </section>
+  <section class="chapters" id="chapters">
+    <div class="chapters-intro">
+      <span class="micro-tag">THE ANATOMY OF A SHOOT</span>
+      <h2 class="chapters-title">The Anatomy of a Shoot</h2>
+    </div>
+    <div class="chapter-panel ch-light" data-parallax="0">
+      <div class="chapter-bg" aria-hidden="true"></div>
+      <div class="chapter-content">
+        <div class="chapter-num">01 · LIGHTING</div>
+        <h3>Studio Lighting</h3>
+        <p>Controlled softbox + rim-light setups for crisp, magazine-grade skin tones and editorial depth on every frame.</p>
+      </div>
+    </div>
+    <div class="chapter-panel ch-style" data-parallax="1">
+      <div class="chapter-bg" aria-hidden="true"></div>
+      <div class="chapter-content">
+        <div class="chapter-num">02 · STYLING</div>
+        <h3>Wardrobe &amp; Glam</h3>
+        <p>Guided outfit changes, glam touch-ups and styling direction so each look feels intentional and camera-ready.</p>
+      </div>
+    </div>
+    <div class="chapter-panel ch-retouch" data-parallax="2">
+      <div class="chapter-bg" aria-hidden="true"></div>
+      <div class="chapter-content">
+        <div class="chapter-num">03 · RETOUCH</div>
+        <h3>Magazine Retouch</h3>
+        <p>High-end retouching — skin, color grade, background cleanup — delivered as polished, print-ready files.</p>
+      </div>
+    </div>
+  </section>
+  <section class="reviews" id="reviews">
+    <div class="reviews-inner">
+      <div class="reviews-head">
+        <span class="micro-tag">VERIFIED REVIEWS</span>
+        <h2>5.0★ rated in Lekki</h2>
+        <p>45 five-star Google reviews from real clients.</p>
+      </div>
+      <div class="review-list">
+        <blockquote class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Beautiful lighting, patient team, and the final edits were magazine-level. Worth every naira."</p>
+          <cite>— Ada, Lekki</cite>
+        </blockquote>
+        <blockquote class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Booked a birthday shoot via WhatsApp, super smooth. Outfit changes were handled so well."</p>
+          <cite>— Tunde, Ikate</cite>
+        </blockquote>
+        <blockquote class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Corporate headshots came out sharp and professional. Turnaround was fast."</p>
+          <cite>— Chioma, VI</cite>
+        </blockquote>
+      </div>
+      <div class="address-block">
+        <div class="addr-line"><strong>Mastodon Photo Studio</strong></div>
+        <div class="addr-line">New Horizon 2 Estate, Lekki Ikate, Lagos Island</div>
+        <div class="addr-line">+234 813 727 7619</div>
+        <div class="addr-actions">
+          <a class="addr-btn" href="tel:+2348137277619">Call</a>
+          <a class="addr-btn addr-btn-wa" href="https://wa.me/2348137277619" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+<div class="booking-drawer" id="bookingDrawer" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="drawer-handle"></div>
+  <div class="drawer-body">
+    <h3>Reserve your shoot</h3>
+    <p class="drawer-sub" id="drawerSummary"></p>
+    <label class="field"><span>Name</span><input id="bName" type="text" placeholder="Your name" /></label>
+    <label class="field"><span>Phone</span><input id="bPhone" type="tel" placeholder="+234..." /></label>
+    <label class="field"><span>Preferred Date &amp; Time</span><input id="bDateTime" type="datetime-local" /></label>
+    <button class="wa-send-btn" id="sendWaBtn">Send Booking on WhatsApp</button>
+  </div>
+</div>
+<div class="float-bar" id="floatBar" aria-hidden="true">
+  <span class="float-text" id="floatText">0 packages · ₦0 — Reserve Shoot →</span>
+  <button class="float-btn" id="floatBtn">Reserve Shoot →</button>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
