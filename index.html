@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Mastodon Photo Studio — Editorial Portraits & Studio Shoots in Lekki Ikate</title>
+<meta name="description" content="5.0★ rated photography & creative studio in Lekki Ikate, Lagos Island. Transparent Naira packages, outfit-change steppers, direct WhatsApp slot reservation." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<!-- Splash -->
+<div id="splash" class="splash" aria-hidden="true">
+  <div class="splash-emblem">
+    <svg viewBox="0 0 120 120" width="96" height="96" aria-hidden="true">
+      <circle cx="60" cy="60" r="56" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+      <circle cx="60" cy="60" r="22" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+      <g stroke="#FFFFFF" stroke-width="2.5" fill="none">
+        <line x1="60" y1="4" x2="60" y2="28" />
+        <line x1="60" y1="92" x2="60" y2="116" />
+        <line x1="4" y1="60" x2="28" y2="60" />
+        <line x1="92" y1="60" x2="116" y2="60" />
+        <line x1="19" y1="19" x2="36" y2="36" />
+        <line x1="84" y1="84" x2="101" y2="101" />
+        <line x1="19" y1="101" x2="36" y2="84" />
+        <line x1="84" y1="36" x2="101" y2="19" />
+      </g>
+      <text x="60" y="66" text-anchor="middle" font-family="Poppins,sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" letter-spacing="1.5">M</text>
+    </svg>
+    <span class="splash-word">MASTODON</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-badge">MP</span>
+      <span class="brand-name">Mastodon Photo Studio</span>
+    </div>
+    <div class="header-actions">
+      <span class="trust-pill">5.0★ (45 Google Reviews)</span>
+      <a class="wa-pill" href="https://wa.me/2348137277619" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-wash" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1>Editorial portraits & studio shoots, booked in seconds.</h1>
+      <p class="hero-sub">5.0★ rated photography studio in Lekki Ikate, Lagos. Transparent Naira packages, outfit-change steppers, and direct WhatsApp slot reservation.</p>
+      <button class="cta-pill" id="getStartedBtn">Get started</button>
+      <div class="chips">
+        <button class="chip" data-chip="Birthday Shoot">Birthday Shoot</button>
+        <button class="chip" data-chip="Corporate Headshots">Corporate Headshots</button>
+        <button class="chip" data-chip="Maternity & Family">Maternity & Family</button>
+        <button class="chip" data-chip="Brand Lookbook">Brand Lookbook</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapters" id="chapters">
+    <div class="chapters-inner">
+      <div class="chapter-head">
+        <span class="micro-tag">STUDIO CRAFT</span>
+        <h2>The Mastodon method</h2>
+      </div>
+      <div class="chapter-pills">
+        <button class="chapter-pill active" data-chapter="0">01 · Studio Lighting</button>
+        <button class="chapter-pill" data-chapter="1">02 · Wardrobe & Glam</button>
+        <button class="chapter-pill" data-chapter="2">03 · Magazine Retouch</button>
+      </div>
+      <div class="chapter-panels">
+        <article class="chapter-panel active" data-panel="0">
+          <div class="chapter-num">01 · LIGHTING</div>
+          <h3>Studio Lighting</h3>
+          <p>Controlled softbox + rim-light setups for crisp, magazine-grade skin tones and editorial depth on every frame.</p>
+        </article>
+        <article class="chapter-panel" data-panel="1">
+          <div class="chapter-num">02 · STYLING</div>
+          <h3>Wardrobe & Glam</h3>
+          <p>Guided outfit changes, glam touch-ups and styling direction so each look feels intentional and camera-ready.</p>
+        </article>
+        <article class="chapter-panel" data-panel="2">
+          <div class="chapter-num">03 · RETOUCH</div>
+          <h3>Magazine Retouch</h3>
+          <p>High-end retouching — skin, color grade, background cleanup — delivered as polished, print-ready files.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="packages" id="packages">
+    <div class="packages-inner">
+      <div class="packages-head">
+        <h2>Shoot packages</h2>
+        <p>Transparent Naira pricing. Tap a card to customize.</p>
+      </div>
+      <div class="search-bar">
+        <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="searchInput" type="search" placeholder="Search shoot packages..." />
+      </div>
+      <div class="cat-chips" id="catChips">
+        <button class="cat-chip active" data-cat="All">All</button>
+        <button class="cat-chip" data-cat="Portraits">Portraits</button>
+        <button class="cat-chip" data-cat="Birthday">Birthday</button>
+        <button class="cat-chip" data-cat="Corporate">Corporate</button>
+        <button class="cat-chip" data-cat="Brand & Events">Brand & Events</button>
+      </div>
+      <div class="card-grid" id="cardGrid"></div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="reviews-inner">
+      <div class="reviews-head">
+        <span class="micro-tag">VERIFIED REVIEWS</span>
+        <h2>5.0★ rated in Lekki</h2>
+        <p>45 five-star Google reviews from real clients.</p>
+      </div>
+      <div class="review-list">
+        <blockquote class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Beautiful lighting, patient team, and the final edits were magazine-level. Worth every naira."</p>
+          <cite>— Ada, Lekki</cite>
+        </blockquote>
+        <blockquote class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Booked a birthday shoot via WhatsApp, super smooth. Outfit changes were handled so well."</p>
+          <cite>— Tunde, Ikate</cite>
+        </blockquote>
+        <blockquote class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Corporate headshots came out sharp and professional. Turnaround was fast."</p>
+          <cite>— Chioma, VI</cite>
+        </blockquote>
+      </div>
+      <div class="address-block">
+        <div class="addr-line"><strong>Mastodon Photo Studio</strong></div>
+        <div class="addr-line">New Horizon 2 Estate, Lekki Ikate, Lagos Island</div>
+        <div class="addr-line">+234 813 727 7619</div>
+        <div class="addr-actions">
+          <a class="addr-btn" href="tel:+2348137277619">Call</a>
+          <a class="addr-btn addr-btn-wa" href="https://wa.me/2348137277619" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="sheet-overlay" id="sheetOverlay" aria-hidden="true"></div>
+<div class="detail-sheet" id="detailSheet" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="sheet-handle"></div>
+  <div class="sheet-body" id="sheetBody"></div>
+</div>
+
+<div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+<div class="booking-drawer" id="bookingDrawer" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="drawer-handle"></div>
+  <div class="drawer-body">
+    <h3>Reserve your shoot</h3>
+    <p class="drawer-sub" id="drawerSummary"></p>
+    <label class="field"><span>Name</span><input id="bName" type="text" placeholder="Your name" /></label>
+    <label class="field"><span>Phone</span><input id="bPhone" type="tel" placeholder="+234..." /></label>
+    <label class="field"><span>Preferred Date & Time</span><input id="bDateTime" type="datetime-local" /></label>
+    <button class="wa-send-btn" id="sendWaBtn">Send Booking on WhatsApp</button>
+  </div>
+</div>
+
+<div class="float-bar" id="floatBar" aria-hidden="true">
+  <span class="float-text" id="floatText">0 packages · ₦0 — Reserve Shoot →</span>
+  <button class="float-btn" id="floatBtn">Reserve Shoot →</button>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
